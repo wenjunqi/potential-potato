@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <title>申请加入社团系统</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #168eb7;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	display: inline-block;
+	margin: 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-control input[type=text], .form-control input[type=email], .form-control textarea, .form-control select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.form-control input[type=text]:focus, .form-control input[type=email]:focus, .form-control textarea:focus, .form-control select:focus {
+  outline: none;
+  background-color: #e5e5e5;
+}
+
+.form-control textarea {
+  height: 150px;
+}
+
+.form-control select option {
+  font-size: 16px;
+}
+
+.btn-submit {
+  display: block;
+  margin: 0 auto;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #000;
+}
+
+.fa-paper-plane {
+  margin-right: 10px;
+}
+form input[type="submit"], form input[type="reset"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}</style>
+<body>
+  <div class="container">
+    <header>
+      <h1>欢迎加入我们！</h1>
+      <nav>
+        <ul>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">社团介绍</a></li>
+          <li><a href="#">加入我们</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form action="#" method="post">
+      <div class="form-control">
+        <label for="name">姓名</label>
+        <input id="name" type="text" name="name" required>
+      </div>
+
+      <div class="form-control">
+        <label for="email">联系方式：</label>
+        <input id="email" type="email" name="email" required>
+      </div>
+
+      <div class="form-control">
+        <label for="major">专业</label>
+        <input id="major" type="text" name="major" required>
+      </div>
+
+      <div class="form-control">
+        <label for="interests">兴趣爱好</label>
+        <textarea id="interests" name="interests" required></textarea>
+      </div>
+
+      <div class="form-control">
+        <label for="society">请选择您想要加入的社团</label>
+        <select id="society" name="society" required>
+          <option value="" disabled selected hidden>请选择社团</option>
+          <option value="society1">社团一</option>
+          <option value="society2">社团二</option>
+          <option value="society3">社团三</option>
+          <option value="society4">社团四</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-submit"><i class="fa fa-paper-plane"></i> 提交申请</button>
+    </form>
+  </div>
+  
+	<footer>
+		<p>版权所有 © 6班320团队</p>
+	</footer>
+</body>
+</html>
